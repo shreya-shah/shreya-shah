@@ -1,4 +1,5 @@
 window.onload = initAll;
+window.onresize = adjustNavLinks;
 
 var menu_icon,nav,nav_items;
 function initAll(){
@@ -21,9 +22,4 @@ function assignFunctions(){
         }
     };
 
-    for(var x=0;x<nav_items.length;x++){
-        nav_items[x].onclick = function(){
-            nav.style.display = 'none';
-        }
-    }
 }
