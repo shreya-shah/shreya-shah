@@ -25,11 +25,16 @@ header a{
 header ul{
     list-style: none;
     display: none;
-    float: right;
+}
+
+header ul li{
+    position: relative;
+    right: 2em;
+    line-height: 2em;
 }
 
 header #logo{
-    font-family: 'Sacramento';
+    font-family: 'Sacramento','cursive';
     font-size: 28px;
     font-weight: bold;
     position: relative;
@@ -44,9 +49,7 @@ header #logo{
 }
 
 header ul li a:hover{
-    background: wheat;
-    color: #333;
-    padding: 1.5em;
+    color: rgba(192, 152, 19, 0.795);
 }
 
 /* Styling the hero unit */
@@ -260,13 +263,14 @@ input::placeholder{
 @media (min-width:750px){
     .try{
         display: flex;
-    flex-flow: column wrap;
-    text-align: justify;
+        flex-flow: column wrap;
+        text-align: justify;
     }
     header ul{
         display: inline;
         position: relative;
         right: 12em;
+        float: right;
     }
 
     header ul li{
@@ -274,6 +278,12 @@ input::placeholder{
         position: relative;
         left: 20%;
         padding-left: 2em; 
+    }
+
+    header ul li a:hover{
+        background: wheat;
+        color: #333;
+        padding: 1.5em;
     }
 
     .fa-navicon{
