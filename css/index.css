@@ -39,6 +39,7 @@ header #logo{
 .fa-navicon{
     position: fixed;
     left: 90%;
+    top: 3.8%;
     font-size: 1.5em;
 }
 
