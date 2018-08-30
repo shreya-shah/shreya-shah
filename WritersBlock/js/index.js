@@ -1,5 +1,4 @@
 window.onload = initAll;
-window.onresize = adjustNavLinks;
 
 var menu_icon,nav,nav_items;
 function initAll(){
