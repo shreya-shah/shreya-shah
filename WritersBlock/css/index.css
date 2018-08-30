@@ -80,6 +80,7 @@ header ul li a:hover{
     margin: 0 2em 2em 2em;
     text-align: center;
     border-bottom: 1px dotted #333;
+    align-items: center;
 }
 
 .genre h2,.submit h2{
@@ -162,7 +163,7 @@ header ul li a:hover{
 .war-item,.science-fiction-item{
     background: rgba(240, 240, 56, 0.247);
     margin: 1em;
-    width: 50%;;
+    width: 60%;;
     padding: 2em;
 }
 
@@ -263,7 +264,7 @@ input::placeholder{
 
 /* Media queries */
 
-@media (min-width:800px){
+@media (min-width:850px){
     header{
         padding: 1em;
     }
@@ -335,6 +336,6 @@ input::placeholder{
 @media (max-width:320px){
     .war-item{
         position: relative;
-        right: 2em;
+        /* right: 2em; */
     }
 }

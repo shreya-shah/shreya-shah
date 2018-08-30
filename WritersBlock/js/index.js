@@ -32,14 +32,14 @@ function assignFunctions(){
 }
 
 function hideNavLinks(){
-    if(window.innerWidth<=800){
+    if(window.innerWidth<=700){
         nav.style.display = 'none';
     }
 }
 
 function showNavBar(){
-    if(window.innerWidth>800){
-        nav.style.display = 'inline-block';
+    if(window.innerWidth>850){
+        nav.style.display = 'inline';
         nav.style.position = 'fixed';
         nav.style.marginTop = '0.4em';
         nav.style.right = '20em';
