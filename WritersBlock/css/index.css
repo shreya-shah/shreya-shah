@@ -294,6 +294,7 @@ input::placeholder{
     .war-genre,.science-fiction-genre{
         flex-direction: row;
         display:flex;
+        align-items: unset;
     }
 
     .war-item,.science-fiction-item{
