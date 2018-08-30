@@ -24,10 +24,20 @@ function assignFunctions(){
             menu_icon.toggle = 'off';
         }
     }; 
+
+    for (let index = 0; index < nav_items.length; index++) {
+        nav_items[index].onclick = hideNavLinks;
+        
+    }
+}
+
+function hideNavLinks(){
+    if(window.innerWidth<=800){
+        nav.style.display = 'none';
+    }
 }
 
 function showNavBar(){
-    // alert(window.innerWidth);
     if(window.innerWidth>800){
         nav.style.display = 'inline-block';
         nav.style.position = 'fixed';
