@@ -91,7 +91,6 @@ header ul li a:hover{
 }
 .genre a{
     text-decoration: none;
-    margin-right: 2em;
     background: #123;
     padding: 1em;
     border-radius: 0.5em;
@@ -182,7 +181,6 @@ textarea{
 }
 
 .submit-writings label{
-    display: block;
     margin-bottom: 1em;
     margin-top: 2em;
     font-family: ubuntu;
@@ -264,7 +262,7 @@ input::placeholder{
 
 /* Media queries */
 
-@media (min-width:850px){
+@media (min-width:851px){
     header{
         padding: 1em;
     }
@@ -327,15 +325,77 @@ input::placeholder{
     }
 }
 
+@media (min-width:850px){
+    header #logo{
+        float: left;
+    }
+}
+
+
 @media (min-width:600px){
     .genre-box{
         flex-flow: row wrap;
     }
+
+    .genre-box a{
+        margin-right: 1em;
+    }
 }
 
 @media (max-width:320px){
-    .war-item{
+    .submit-writings input,textarea{
+        display: block;
+        margin:  1em auto;
         position: relative;
-        /* right: 2em; */
+        right: 0.9em;
+        width: 100%;
+        padding: 0.8em;
+    }
+
+    textarea{
+        height: 8em;
+    }
+}
+
+@media (max-width:300px){
+    .story-item{
+        width: 80%;
+    }
+
+    .about-us{
+        width: 70%;
+    }
+}
+
+@media (min-width:851px) and (max-width:1216px){
+    .story-item{
+        width: 35%;
+        position: relative;
+        left: 4.5em;
+    }
+
+}
+
+@media (min-width:1217px) and (max-width:1247px){
+    .story-item{
+        width: 40%;
+    }
+}
+
+@media (max-width:1060px){
+    .story-item{
+        left: 3em;
+    }
+}
+
+@media(max-width:950px){
+    .story-item{
+        left: 2em;
+    }
+}
+
+@media (max-width:850px){
+    header ul{
+        display: none;
     }
 }

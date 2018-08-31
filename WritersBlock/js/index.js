@@ -42,7 +42,11 @@ function showNavBar(){
         nav.style.display = 'inline';
         nav.style.position = 'fixed';
         nav.style.marginTop = '0.4em';
-        nav.style.right = '20em';
+        nav.style.right = '15em';
+        for(var x=0;x<nav_items.length;x++){
+            nav_items[x].style.padding = '0.5em';
+            nav_items[x].style.position = 'relative';
+        }
     }else if(menu_icon.toggle === 'off'){
         nav.style.display = 'none';
     }
