@@ -1,0 +1,98 @@
+@import 'custom';
+@import  'variables';
+@import './node_modules/bootstrap/scss/bootstrap.scss';
+@import url('https://fonts.googleapis.com/css?family=Exo');
+@import url('http://fonts.googleapis.com/css?family=Leckerli+One');
+@import url('https://fonts.googleapis.com/css?family=Caveat');
+
+// styling body
+body{
+    background: #000;
+    margin: 0 auto;
+}
+
+// styling jumbotron
+.jumbo-header{
+    background: url(../images/anime_background.jpg) no-repeat;
+    margin-bottom: 0;
+    background-size: cover; 
+    background-attachment: fixed;
+    h2{
+        font-family: 'Caveat';
+    }
+}
+
+.jumbotron{
+    h2{
+        background: rgba(0,0,0,0.3);
+        padding: 1em;
+        width: 50%;
+        margin: 2em auto;
+    }
+}
+
+.navbar-brand{
+    font:
+    {
+        family: 'Leckerli One';
+        size: 24px;
+    }
+}
+
+// styling discover section
+#discover{
+    margin-top: 2em;
+    h2{
+        text-align: center;
+        font-family: 'Exo';
+    }
+}
+
+.row{
+    margin-top: 3em;
+}
+
+.row{
+    div{
+        margin-bottom: 2em;
+    }
+}
+
+.card{
+    img{
+        height: 20em;
+    }
+}
+
+.card{
+    img{
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+}
+
+// styling all sections
+section{
+    margin: 4em auto;
+}
+
+// styling footer
+
+footer{
+    background: #5e1814;
+    padding: 1em;
+    h3{
+        margin: 0;
+    }
+}
+
+.join-btn{
+    position: relative;
+    bottom: 2em;
+    right: 0.2em;
+}
+
+a:hover{
+    text-decoration: none;
+}
